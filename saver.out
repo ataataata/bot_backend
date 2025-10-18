@@ -1,0 +1,19 @@
+nohup: ignoring input
+INFO:     Started server process [6771]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+[chatbot-saver] Listening on 0.0.0.0:8081
+INFO:     128.119.202.183:39107 - "GET /health HTTP/1.1" 200 OK
+INFO:     128.119.202.183:39107 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     128.119.202.183:22202 - "GET /chatbots HTTP/1.1" 405 Method Not Allowed
+INFO:     128.119.128.197:52656 - "GET /health HTTP/1.0" 200 OK
+INFO:     128.119.128.197:52668 - "GET /health HTTP/1.0" 200 OK
+INFO:     128.119.128.197:52678 - "GET /health HTTP/1.0" 200 OK
+INFO:     128.119.202.183:48985 - "GET /chatbots HTTP/1.1" 405 Method Not Allowed
+INFO:     128.119.202.183:22360 - "GET /chatbots HTTP/1.1" 405 Method Not Allowed
+INFO:     128.119.202.183:54869 - "GET /health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6771]

@@ -1,0 +1,41 @@
+nohup: ignoring input
+[import] Importing JSON(s): bots/ials-microscope-helper-20250926-163403.json
+[OK] Imported bots/ials-microscope-helper-20250926-163403.json -> /b/ials-microscope-helper  (pairs=65)
+IMPORT_DONE:ials-microscope-helper
+[import] Ready links:
+  -> http://0.0.0.0:9000/b/ials-microscope-helper
+[serve] Starting on http://0.0.0.0:9000
+INFO:     Started server process [7451]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:9000 (Press CTRL+C to quit)
+INFO:     128.119.202.128:18526 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     128.119.202.128:46651 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     128.119.202.128:4046 - "GET /b/ials-microscope-helper HTTP/1.1" 200 OK
+INFO:     128.119.202.128:4046 - "GET /b/ials-microscope-helper HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.138.205:33348 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.138.205:41390 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.138.205:41400 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     167.94.138.205:53796 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.138.205:53864 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.138.205:53882 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     167.94.138.205:53898 - "GET /robots.txt HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     172.234.143.92:41828 - "GET / HTTP/1.0" 200 OK
+INFO:     172.234.143.92:41836 - "OPTIONS / HTTP/1.0" 405 Method Not Allowed
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7451]

@@ -1,0 +1,13 @@
+{
+  "name": "Ataa",
+  "lab": "IALS",
+  "owner_email": "ataarin@gmail.com",
+  "description": "asdfkasfdasdfo",
+  "slug": "ials-ataa",
+  "embed_model": "nomic-embed-text",
+  "generator_model_received": "qwen2.5:7b-instruct",
+  "temperature": 0.2,
+  "top_p": 0.95,
+  "created_at": "2025-09-22T00:22:04.731Z",
+  "version": "2025-09-16"
+}

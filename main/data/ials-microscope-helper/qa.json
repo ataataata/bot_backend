@@ -1,0 +1,262 @@
+[
+  {
+    "q": "What computers are available for image analysis and software for users?",
+    "a": "There is a Image Analysis server called Hive. It is accessible via remote desktop interface and can handle up to 16 concurrent users. It has 2.0 terabytes of RAM and five high-end GPU cards. It has various open- and closed-source image analysis packages preinstalled for your usage. If there is software that you need, please reach out to Jim Chambers to discuss. To use this, you can request access to the Hive from LMF staff. On the Hive you will find Nikon Elements Analysis packages including General Analysis 3 (GA3), deconvolution, as well as the ability to train your own AI to use for segmentation, image clean up, etc. in your analysis pipeline. You can run your analysis pipeline in batch mode so it works on its own while you do more important work."
+  },
+  {
+    "q": "I have an emergency.",
+    "a": "If you get a cut or are hurt in some other way or if there is an emergency, let us know as soon as you are safe or when no one else is in harms way. Please help yourself to the emergency kit on the big table in the middle of the room. Depending on the situation, contact EHS (413-545-2682, closing hours hotline 4135-45-3630), UMass police department (413-545-3111), or the local police (911)."
+  },
+  {
+    "q": "What is the Hive Image Analysis Server?",
+    "a": "There is a new Image Analysis server called LMF-Hive. It is accessible via remote desktop interface and can handle up to 16 concurrent users. It has 2.0 terabytes of RAM and five high-end GPU cards. It has various open- and closed-source image analysis packages preinstalled for your usage. If there is software that you need, please reach out to Jim Chambers to discuss."
+  },
+  {
+    "q": "How to use the Hive and Nikon Elements",
+    "a": "Firstly, make and begin your Corum reservation if using NIS Elements. We have 4 licenses for Elements, each with GA3, AI, deconvolution, etc. All of them are equivalent and on the same machine. To use open source software, there is no need for Corum reservation for now. Then Connect to the Hive. For NIS Elements, on first you will get a low disk space error. - Type the letter Q - At the bottom of the General tab, change the Temp folder to E:Temp - If you do not do this, Elements will crash- If you don not have it already, install Microsoft Remote Desktop client software on your Mac or PC. - Note that we now offer in-person terminals to access the Hive on a big screen. - Add a new PC connection and use this address: LMF-HIVE.CAMPUS.ADS.UMASS.EDU - Connect to the Hive remote computer by logging in with your UMass credentials - To connect from off-campus, you will need to install and use the UMass IT VPN. Use the analysis software of your choice - Select the software you need for your work. If missing, let LMF staff know, and we will install. - Data can be ***temporarily*** stored on the data drive E in Hive-User-Projects and make a subfolder with your advisors last name. - Data will be removed in a first-in, first-out scheme.**** **(i.e. do not plan on finding your data here in 2 years)** - **This is just for active data.** - Make judicious use of the IALS-Core-Shared folder for data storage and movement.) Moving data to/from the Y-drive - To connect to the Y-Drive server from a Mac, go to finder, then Go, then Connect to Server and type smb colon slash slash 172.19.83.114 in the box. Then enter your credentials. - To connect to the server from a PC, go to file manager, then type \\172.19.83.114 in the top path bar. Then enter your credentials."
+  },
+  {
+    "q": "How can I run batch analysis using GA3 in Nikon Elements?",
+    "a": "To run GA3 in batch and get your results in a nice table, you need to add Cumulative Results after you have accumulated your records in a nicely formatted table. This will add a filename column when you run the batch so you will know which file was the source for each group of data."
+  },
+  {
+    "q": "Where should I be saving my data?",
+    "a": "Save your data locally on the data drive of the microscope PC (Drive D, E, F, G, or H: depending on the microscope.). Never ever save data to the C drive as data found there is automatically and permanently deleted to assure the system can run smoothly for everyone. When you are done imaging, upload your data to a network location of your choice or use a USB stick. When we need more space on the data drives, we delete the oldest files first. Long term storage is not the responsibility of the LMF. You should check with your advisor on their plan for data management, accessibility, and storage."
+  },
+  {
+    "q": "How can I get human help?",
+    "a": "To get help from a human LMF staff member, the fastest way to get help is to message the LMF team using Microsoft Teams and start a new chat and type LMFStaff all one word) in the to field and hit enter. The current staff members will appear in the chat message. If you message during regular business hours, you are very likely to get a rapid response."
+  },
+  {
+    "q": "PC or monitor appears to not turn on.",
+    "a": "If you are getting a blank screen or it seems that the monitor won't turn on, please be sure you have begun your reservation on Corum. This controls the system remotely via the internet."
+  },
+  {
+    "q": "Focus or Z-position not matching when running z-stack experiment",
+    "a": "Go to the Devices menu bar on top and be sure you have the right z-device selected under z-device. Typically, you want this to be set to TI Drive or Ti2 Drive, depending on the microscope body. If you are using the Piezo (if it is an option, is faster and is used on the SIM and sometimes on the Crest.) then choose that. In the ND Acquisition tab, in z-devices choose the same device selected in step 1. This should fix the problem."
+  },
+  {
+    "q": "Focus or Z-position not changing when using physical focus knobs",
+    "a": "If you can't change the z-value using the focus knobs or you can't move the lens up or down, it probably means the escape button was pressed by the last user. On a TI-E microscope body (tan microscope stand), look on the right side of the microscope click and hold escape button. While holding that button press refocus. This will release the lock safely. If you are on one of the newer Ti2 scopes, then find the similar button on the microscope body."
+  },
+  {
+    "q": "Issues with Nikon Elements software on a microscope PC saying another instance is running",
+    "a": "If you run Nikon NIS-Elements and you receive a warning saying that another instance of the application is running, it simply means another user didn't close out correctly. If this is happening on any of our microscope computers, the easiest and quickest way to fix it is to simply restart the computer to bump the other user off and reset the software license. Once it reboots, everything should work well."
+  },
+  {
+    "q": "Issues with Nikon Elements software on HIVE saying another instance is running",
+    "a": "If you have this issue on the HIVE, then another user might be running behind and using up a license. If this is the case, check Corum to see who it might be and send them a chat message on Microsoft Teams. If this occurs during business hours, feel free to reach out to LMF staff."
+  },
+  {
+    "q": "If you get a hardware error message when your run Nikon Elements",
+    "a": "If you are getting an error message about hardware loading failing, it is ok. This is most frequently caused by something not being turned on in the system, or something being turned on in the incorrect order. First, check that all numbers for the microscope setup have been turned on. If something is off, turn it on, then restart Nikon NIS Elements and see if the problem persists. If there are still issues, turn off the setup completely and start from the beginning, making sure to leave ten seconds in between turning each numbered switch on."
+  },
+  {
+    "q": "If you can not get an image to show up on the computer screen",
+    "a": "If you can see your sample correctly through the eyepiece but you don't see anything on the screen here are a few things to check. Did you click the Nikon A1/AX or camera light-path tab to switch to the camera or confocal setting? Did you click an OC (optical configuration, they are the buttons on each tab)? For the scanning confocal microscopes, if you see a red button that says, remove interlock, click it. This should remove the interlock that is blocking the light. This is a common pitfall on the A1R25 and A1RMP. Is the sample in focus and directly under or above the sample? Go back to the eyepiece setting and double-check as it could have moved or might be off-center. For A1RMP, is the knob next to the eyepiece on F? Is the shutter at O (open) setting? Is the filter position at 1 (empty)? Did you wait long enough for the lasers to warm up? If you see lights blinking on the large box, the lasers are still warming up so just give them a few more minutes."
+  },
+  {
+    "q": "If you are getting an error about the Crest camera when you launch Nikon Elements",
+    "a": "If you are getting an error about the Crest camera, it usually means that the camera might not have connected correctly. Please shut down the PC (wait till lights on PC turn off), turn off camera, then turn camera back on and wait for blinking on back to stop. Finally, start the PC. That should do it! You should not have to restart any other devices to solve this issue."
+  },
+  {
+    "q": "If you can not see anything through the eyepiece",
+    "a": "Here are things to check when you can't see through the eyepiece: 1. Are you on the eyepiece tab in the Nikon NIS Elements program? The eyepiece tab needs to be selected to see light through the eyepiece. 2. Did you select an OC (optical configuration)? You need to select an OC (the buttons that are labeled green, BF, TRITC, red, or FITC or other things like that in the eyepiece tab). 3. When the correct tab and OC are selected, does the correct button (labeled eye) on the front of the microscope turn light up in green. If not, press the button manually, then right-click on the OC and click assign current microscope setting. 4. Is there an objective under your sample? If not, select one by clicking the icon on the left side of the screen. 5. Is your sample directly above the objective? 6. Is your sample in focus? You might not see anything until you are close to the focal point. 7. Did you turn everything on in the correct order? If not, turn off all devices and turn them back on in the correct order. 8. For A1R25, is the small pad (switch number 5) turned on? Try pressing the buttons to turn up the light intensity. V- violet (blue), GR- green, R- red. 9. For A1RMP, the knob on the right side of the eyepiece needs to be on BINO and the shutter above the objective needs to be on the O (open) configuration. Also, make sure to turn on the light. Press the white button on the table for BF and step on the footswitch for fluorescence. For fluorescence, you also need to turn the wheel to the correct position (2 is blue, 3 is green, and 4 is red) that is not 1."
+  },
+  {
+    "q": "If the program is running very slow or is frozen",
+    "a": "If the software is frozen or running extremely slow, you should close the software and reboot the PC. Leave the hardware all turned on during this. Once the PC is back up and you are logged in, check the C-drive to be sure it is not full. If it is, please message core staff. The reboot usually frees up RAM resources and solves the issue."
+  },
+  {
+    "q": "If you think the stage is not moving very fast or is not moving at all.",
+    "a": "If the joystick seems to not be moving and yet the lights are on the joystick, it is probably set to move excruciatingly slow. If you are on a Nikon TI-E (tan microscope body), the joystick speed can be changed for xy movement by twisting the joystick stick. Watch the orange light. If you are on a Nikon Ti2 (white/black microscope body), click the z button that has 3 up-arrows above it. It cycles through extra fine, fine, and coarse."
+  },
+  {
+    "q": "If you think your image looks grainy or has low resolution",
+    "a": "If your image looks grainy or like it is low resolution, it is probably an issue with the sample, the focus, or an error. If you are certain that you are in focus AND you are sure you have fluorescence (by using the eyepiece with epifluorescence), did you have an error when you booted up? if so, restart the PC and the microscope controller box. If you don't see the fluorescence signal by eye, you very likely will not see it on the software. It is not magic, unfortunately. It sometimes helps to clean the objective and the sample glass."
+  },
+  {
+    "q": "I have an error with Windows at boot up on the Crest system",
+    "a": "If you see an error before windows even boots up, please follow the instructions on the screen. You may need to fully shut down the PC and restart. If you are using the Crest microscope, be sure to turn on the camera first and wait for about 2 minutes until there are no blinking lights at the back of the camera. Then start PC, laser box key, and Crest device and you should then be ready to image on the Crest microscope."
+  },
+  {
+    "q": "I am currently unable to use the A1R-SIMe microscope due to an issue where it says, Unable to connect device EXFO X-Cite 120",
+    "a": "You can simply ignore that as it will not affect confocal imaging. There is probably a loose connection at the back of the green and white box that is on the right side of the microscope. Feel free to check those cables if you are up for it."
+  },
+  {
+    "q": "When I run Nikon Elements, I get a startup error that says select the confocal simulator to be loaded",
+    "a": "To fix this, close Nikon NIS elements, power off Nikon A1 box at the back wall, then power on and relaunch software."
+  },
+  {
+    "q": "Does anyone know how to save the Maximum intensity projection images as a tiff? I save the image but it does not save as the MIP",
+    "a": "When you view it, you are right - it saves as a regular z-stack. To create a maximum intensity projection for saving, go to ND Processing under Image, then find create max intensity projection and save that result."
+  },
+  {
+    "q": "I could not see the signal and no excitation laser on the Flim system on the A1SP microscope.",
+    "a": "Check that you have turned on the correct pulsed laser control unit that is to the left of the A1SP microscope."
+  },
+  {
+    "q": "What is the pixel size for the CellCyte microscopes?",
+    "a": "The size of the pixels for images acquired from the CellCyte microscopes (this is not true for other microscopes in the facility) is 0.234 micron per pixel."
+  },
+  {
+    "q": "I just started up the Crest and I have a POST error saying fatal PCI error.",
+    "a": "That is a common error that usually occurs when the PC is turned on before the camera is fully on. It makes the computer crash. Try to restart the procedure of turning on the microscope. Make sure you start with the computer off as the first step and then proceed with the rest of the steps, waiting about 2 minutes after you turn the camera on before powering up the PC."
+  },
+  {
+    "q": "I am on the Crest and when I run Elements it says it can not open camera device Prime 95B.",
+    "a": "To solve this, do windows shut down then wait for PC lights to turn off fully. Next, then turn off camera if it is on, then turn camera back on and wait about 2 minutes, then turn PC back on and launch software again."
+  },
+  {
+    "q": "How do I figure out the pixel size for images that I collected in the Light Microscopy Facility",
+    "a": "Almost always, the pixel size is listed in the image file. It is part of the metadata that can be viewed with Nikon Elements and other software like Fiji. Look for the image properties tab and find the word calibration."
+  },
+  {
+    "q": "Does anyone know if there is a way to copy a portion of a GA3 recipe from one into another?",
+    "a": "There isn't an easy way to copy a part of one recipe to another, but you can make a shared function by grouping part of a recipe and then call that function in other GA3 recipes."
+  },
+  {
+    "q": "I am having trouble with Nikon Elements crashing when I am analyzing images using the HIVE server.",
+    "a": "Sorry to hear that. Often the cause of this crashing is that you might not have set your temporary directory in the settings. To do this, double click on the top bar of Elements and then at the bottom of the General tab, change the Temp folder to the subdirectory called Temp that you can find in the E-drive."
+  },
+  {
+    "q": "I am using the Keyence microscope and when I try to run the Keyence Viewer software, I get a pop-up that says Already running.",
+    "a": "Thanks for your question. To solve this problem, you will just need to restart the PC. This will end the disconnected session and start fresh."
+  },
+  {
+    "q": "How can I figure out the pixel calibration or size for imaging I acquired on the Keyence microscope?",
+    "a": "Tiff files saved with Keyence software/analyzer has metadata that is not compatible with Fiji or Image-J. If you use the default calibration on the tiff files for your scale bars, it will not be calibrated correctly. To display an accurate scale bar, you will need to manually enter the right resolution in Fiji. To do this; 1. Find the resolution info on the Keyence analyzer. It is under Insert then scale then calibration settings 2. Then in Fiji, do image then properties or go to analyze then set scale and enter the number you got from step 1."
+  },
+  {
+    "q": "I have a question regarding collecting tiled or large images. I collected two large images with a 10 by 10 array and on one of them there appears to be a repeating area. Do you know the reason?",
+    "a": "It appears that the stage or the sample didn't move with the image that has the repeats, but it did with the other one. I have seen this happen in certain cases, often when an oil objective is used. Because the oil has high viscosity, it can drag the sample around with it if the sample is not clamped down. To prevent this movement, feel free to use some black painter's tape to hold the sample to the holder. You can find it on the big table in the middle of the room or you can ask LMF staff."
+  },
+  {
+    "q": "I can not run Fiji on the HIVE because it is giving a permission denied error.",
+    "a": "This happens with the auto-update feature. Please send a message to Jim and he can update the software as administrator and the problem will go away."
+  },
+  {
+    "q": "I am working with Nikon Elements on the HIVE for image analysis and for some reason when I try to use most of the features in Elements they are all greyed out and not available. Do you know how I can fix this?",
+    "a": "This often happens as some features require you to have an image open before launching. This happens when trying to use analysis explorer, GA3, and the tracking module. Probably affects other things as well. Please give that a try."
+  },
+  {
+    "q": "Do you still do office hours for help?",
+    "a": "Visit umasslmf dot dev and you should see the current schedule along with a calendly link. If you do not get what you need on that site, simply email Jim."
+  },
+  {
+    "q": "We have a new user in my lab and they want to get started with using resources in the Light Microscopy Facility. How should they proceed?",
+    "a": "The easiest way to get them started is to have them email Jim. Providing some information on the types of data they hope to collect is always a good idea so that Jim and his team can steer them towards the best microscope choices for their research questions."
+  },
+  {
+    "q": "The microscope computer I am using says it needs to do a Windows update. What should I do?",
+    "a": "You can pause the update during your imaging session. When you are done, it would be wonderful if you could restart the PC so that the update is applied. Thank you."
+  },
+  {
+    "q": "I need to update my speed type number in Corum. Who can help me with that?",
+    "a": "Your lab bookkeeper should be able to do that in Corum, but if you run into any trouble, you can simply email Jim for instructions on updating it."
+  },
+  {
+    "q": "Questions about Photoactivation, Photobleaching, FRAP, FLIP experiments",
+    "a": "Any of our Nikon A1 confocal microscopes or our Nikon AX confocal microscopes can easily perform photobleaching (FRAP) experiments or photoactivation (PA). Additionally, our X1 spinning disc microscope can do the same and is generally better for live cells or fast-moving fluorophores. To perform a FRAP or PA experiment, in Nikon Elements software you choose a small region using the region of interest (ROI) editor to photo-bleach or a line or a point or any shape you desire, set it as a stimulation ROI and then use the stimulation module. You can do repetitive stimulations using ND stimulation module or other ND modules in the software. These can be found by right-clicking on a blank part of the background of Elements and finding analysis controls."
+  },
+  {
+    "q": "I am getting a connection or simulation error on the scanning confocal microscopes",
+    "a": "If you are getting an A1 Simulator or simulation error, the reason is that things were either not shutdown correctly or were started incorrectly. Here is what I need you to do: Close the Nikon software if it is open. Find the large Nikon box next to the microscope table (this is not the Nikon box with the lasers). Look for a square push button power switch on the left side of the box for the A1 confocal microscopes and a large circle button at the front for the AX confocal microscopes. When you find it, click it to turn off that box. Wait 15 to 30 seconds, push button on box to power it up. Wait for the lights to stabilize and then run NIS Elements. This should solve the error. If this does not solve the error, shut everything off in order (high number to low, with 10 seconds in between) and restart all devices and NIS Elements."
+  },
+  {
+    "q": "If you want to gather optimal pixel size resolution pictures on a scanning confocal.",
+    "a": "The Nyquist criterion requires a sampling interval of about twice the highest spatial frequency of the specimen to accurately preserve the spatial resolution in the resulting image. If sampling occurs below that required by the Nyquist criterion, details with high spatial frequency will not be accurately represented in the final image. The Abbe limit of resolution for optical images is approximately 0.22 micrometers (using visible light), meaning that a digitizer must be capable of sampling at intervals that correspond in the specimen space to 0.11 micrometers or less. A digitizer that samples the specimen at 512 pixels per horizontal scan line would have to produce a maximum horizontal field of view of 56 micrometers (512 x 0.11 micrometers) to conform to the Nyquist criterion. An interval of 2.5 to 3 samples for the smallest resolvable feature is suggested to ensure adequate sampling for high resolution imaging"
+  },
+  {
+    "q": "If you see stripes on the screen when using a scanning confocal microscope",
+    "a": "If you see stripes on the screen, it probably means the scanning confocal control box needs to be reset. This is the simulator error that is quite common in a multi-user facility."
+  },
+  {
+    "q": "If you see a dialogue popup saying dummy to position 1",
+    "a": "If you get the pop up indicating something about Dummy to position 1 you can just ignore it. If it is annoying, you can remove it by clicking Light path at top right, then the gear icon at bottom left and uncheck the dummy warning box."
+  },
+  {
+    "q": "How can I change the displayed color of my image or channels?",
+    "a": "In Elements software, you can change the color for old data or for future data. - For old data: Right-click on the image channel tab at the bottom of the image, choose Properties, and then set your desired color. - For future data on a confocal: Click Detector, then click the desired channel color. - For future data on other microscopes: Right-click on the optical configuration button, click Edit, and then find the color you like."
+  },
+  {
+    "q": "How can I image more than 3 or 4 fluorophores?",
+    "a": "To image four or more colors, we recommend consulting an LMF staff member to ensure minimal to no bleed-through. In general, you want to image your furthest red color first and your bluest color last to minimize photobleaching. Almost all our microscopes can easily image 4 fluorescent colors plus a transmitted channel. Some can do 5 easily or more using spectral imaging, fluorescence lifetime imaging, or special filter sets. Ask staff for more information on these options."
+  },
+  {
+    "q": "Can I get confocal images of my color-stained sample with transmitted light?",
+    "a": "Unfortunately, no. Confocal imaging is only for fluorescent samples and does not work with bright-field settings. However, you can still perform a z-stack with bright-field to get a 3D image on almost all our microscopes, though the resolution will not be the same as a true confocal image. If you have a sample with a non-fluorescence-colored stain, the Keyence microscope is your best and easiest option. Please contact LMF staff for a consultation."
+  },
+  {
+    "q": "Can I do live cell imaging with incubation?",
+    "a": "Yes. If you need access to the stage-top incubators, send LMF staff a message on Teams. Once you have access, we can show you how to use it in person. We have options for chamber slides, dishes, and well plates. We also have 5% carbon dioxide available, which you can reserve on Corum. If there's a scheduling conflict for the carbon dioxide, please let us know or contact the other user to coordinate."
+  },
+  {
+    "q": "Where is the best place to store my data?",
+    "a": "You can use a cloud service. We also highly recommend our free, large network-attached storage (NAS) server. To get access, your advisor will need to submit a request form, which can be found at umasslmf.dev under the analysis workstations link. Once you have access, you can copy data from any LMF computer to the shared folder and access it from anywhere."
+  },
+  {
+    "q": "What should I do if I need starter optical configurations or lost my settings?",
+    "a": "To import starter settings in Nikon Elements, go to Calibration -> Optical Configurations and click Import. Find the most recent XML file in the data drive. You can also import settings from old data by opening an ND2 file, right-clicking the image, choosing reuse camera settings, and then reuse device settings. Click add in the top right to save it as a new configuration (be sure to un-check the objective in the pop-up window)."
+  },
+  {
+    "q": "What should I do if I'm having issues getting good brightfield, transmitted, phase contrast, or DIC images?",
+    "a": "If you are having trouble with Kohler illumination, first, move to a low magnification objective like 10x and focus using the eyepiece. While looking through the eyepiece, close the top diaphragm slowly until you see the iris leaves or dimming. Focus the condenser lens up and down until the dark/bright contrast is sharp. Center the spotlight using the two thumbscrews on the front of the condenser, then open the top iris until your field of view is just filled. Then you can move to a higher magnification. If you are on a Nikon TI2 microscope, you will need tools; please consult with LMF staff."
+  },
+  {
+    "q": "What is saturation and how does it work?",
+    "a": "Saturation is when a digital detector (like a Photomultiplier tube or camera) receives more signal (photons) than it can hold. Think of it like a coffee mug overflowing in the rain. A 12-bit detector can hold a signal value from 0-4095, and a 16-bit detector from 0-65535. If the signal exceeds this maximum value, the detector is saturated, and you lose the ability to accurately quantify that data."
+  },
+  {
+    "q": "Which microscope or channel should I use to image a certain fluorophore?",
+    "a": "It's almost always possible to visualize any fluorophore from blue to near-infrared, even without the perfect filter set. All our microscopes are equipped with basic filter sets for common fluorophores (blue, green, red, far-red). Some have specific lasers/filters for CFP, YFP, and Cy7. Additionally, our A1SP spectral detector microscope and our AXR microscope can distinguish closely grouped fluorophores, and our FLIM system can even discern two different green fluorophores like FITC and GFP."
+  },
+  {
+    "q": "How should I apply and clean oil from oil objectives?",
+    "a": "First, ensure you are using number 1.5 cover glass. To apply oil: 1. Move the Z-drive (focus knob) to its lowest position. 2. Rotate in an oil objective. Double-check that it says oil on the objective. 3. Apply one drop of oil to the top lens of the objective without touching it. 4. Place your sample on the stage. 5. Using an Eyepiece configuration on low power, increase the z-value. You'll see a flash as the oil touches the coverslip. 6. You can now focus on your sample. To clean the oil when done with your imaging or you need to change objectives (this is absolutely required): 1. Move the Z-drive to its lowest position. 2. Remove the sample. 3. Tear a piece of lens tissue in half. 4. Use one half to gently drag across the objective lens with no downward pressure to absorb the visible oil. 5. Spray the other half of the tissue once with lens cleaner and repeat the dragging motion until clean. 6. The objective should look mirror-like with no residue when viewed from a shallow angle."
+  },
+  {
+    "q": "How can I use the mouse to control focus and the Z-axis?",
+    "a": "In Nikon Elements, go to the Devices menu, find Mouse Joystick Setup, and choose Ti (or Ti2) Z-drive. Then, go to Devices again and click Enable Mouse Joystick. To control the XY stage movement with the mouse, click the compass-like icon at the top of a Live image window. Note that these controls only work when an image is live and not frozen."
+  },
+  {
+    "q": "How can I display a scale bar or measure things in my image?",
+    "a": "In Nikon Software: Click the scale bar icon on the right side of your image. This adds it as a non-destructive layer. - In Keyence Analyzer: Go to Insert and then Scale. - In Fiji/ImageJ: You must manually enter the calibration. In the Keyence Analyzer app, go to Insert -> Scale -> Calibration Setting and write down the microns per pixel value. In Fiji/ImageJ, go to Image -> Properties and enter the converted value (1 divided by the Keyence number)."
+  },
+  {
+    "q": "How can I get help with my experimental plans?",
+    "a": "We are available for free consultations for all UMass Amherst community members. Please email us at lmf@umass.edu or message us on Microsoft Teams. We also offer free office hours and chat sessions. If you need help, please get in touch. It is our job to help you!"
+  },
+  {
+    "q": "What does gain mean and what does it do?",
+    "a": "Gain refers to the voltage applied to the detector. If the gain is too low, you won't see photons. If it's too high, you might see more photons but you will also see significantly more noise. As a general rule, keep the gain below 20 on the scanning confocal microscopes and try to keep it vertically aligned with the laser power, especially for the green and red channels."
+  },
+  {
+    "q": "Are there costs associated with training and getting help?",
+    "a": "Yes, all users are charged a one-time training fee for each microscope. After training is complete, the solo-use fee applies for future usage. We are also available for dedicated, assisted imaging for a fee. All rates can be found on the rates tab on our main website via the UMass Institute for Applied Life Science site."
+  },
+  {
+    "q": "What should I do if I run out of supplies?",
+    "a": "If you run out of objective oil, lens tissue, lens cleaner, or other supplies, please contact LMF staff via Microsoft Teams or email. If it's after hours, you can borrow some from a nearby microscope desk or the center table, but please still send us a message so we can restock it."
+  },
+  {
+    "q": "How can I view my data on my own computer or laptop?",
+    "a": "Most microscope image files (like .ND2) are not readable by standard computer image viewers. We recommend two free solutions: 1. Fiji: A distribution of ImageJ that includes the Bio-Formats plugin, which can read most proprietary microscopy image formats. 2. Nikon NIS-Elements Viewer: A free standalone program that lets you view .ND2 files with the same look and feel as the full software, just without the advanced analysis features."
+  },
+  {
+    "q": "Is there a checklist to get me started on the microscope?",
+    "a": "Yes! If it's been a while since your training, you can use this checklist. Also, check the Files tab in the General channel on Microsoft Teams or contact staff. New User Checklist: 1. Turn devices on in the correct order (wait 10 seconds between each). 2. Log in with your UMass credentials. 3. Start NIS Elements. 4. Select the correct objective. Use oil if the objective is marked oil. 5. For eyepiece viewing, click the Eyepiece tab and select an Optical Configuration (OC). 6. Focus on the sample using the side knob. 7. Switch to the confocal tab (e.g., A1) and select an OC. 8. Click the play button to see a live image. 9. Use the histogram to adjust exposure/laser/gain. Avoid saturation. Right-click the red exclamation mark on the OC and select assign current settings to save changes. 10. Adjust contrast by moving the line on the Look-Up Table (LUTs). 11. Click the camera icon to take a picture. 12. Use the ND acquisition tab for z-stacks, large images, time-series, or multipoint imaging. 13. When done, lower the objective to its minimum Z position. 14. Restart the computer and stop your reservation on Corum."
+  },
+  {
+    "q": "How can I reorient or rotate my sample on the screen while imaging?",
+    "a": "On a scanning confocal, go to the Scan Area settings. You can shrink the green scan box slightly, then grab the green circle with your mouse and rotate it to the desired angle. Right-click to send the new settings to the hardware."
+  },
+  {
+    "q": "How can I get higher contrast images for the brightfield or transmitted channel?",
+    "a": "You can use DIC on some microscopes. First, perform Kohler illumination. Then, insert the DIC optics. If the image is too dim, open the aperture below the N1 or N2 position. Also, ensure any top ND or GIF filters are slid out of the light path. Finally, confirm the DIC prism and analyzer are installed correctly. For help, please contact LMF staff."
+  },
+  {
+    "q": "How can I improve my image resolution?",
+    "a": "Poor resolution is often confused with poor contrast or focus. Try these steps: 1. Make sure the sample is perfectly focused. 2. Clean the coverslip. 3. Clean the objectives (even non-oil ones) with lens cleaner. 4. Image a positive control sample first to ensure your signal is bright enough. 5. If possible, prepare a thinner sample. 6. For potentially higher resolution, try using the Nyquist sampling settings."
+  }
+]

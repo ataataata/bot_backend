@@ -1,0 +1,13 @@
+{
+  "bot": {
+    "name": "Test",
+    "slug": "test",
+    "owner_email": "you@example.com"
+  },
+  "pairs": [
+    {
+      "q": "hi",
+      "a": "hello"
+    }
+  ]
+}

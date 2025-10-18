@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Lab Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font: 14px system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin:0; background:#f7f7fb; color:#111; }
+    .wrap { max-width: 820px; margin: 24px auto; padding: 0 16px; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:14px; box-shadow:0 1px 6px rgba(0,0,0,.05); }
+    .row { display:flex; gap:8px; }
+    .btn { padding:8px 12px; border-radius:10px; border:1px solid #e5e7eb; background:#111; color:#fff; cursor:pointer; }
+    .btn:disabled{opacity:.6; cursor:default;}
+    .input, .ta { width:100%; padding:10px 12px; border:1px solid #e5e7eb; border-radius:10px; }
+    .msgs { height:62vh; overflow:auto; padding:12px; background:#fafafa; border-bottom:1px solid #eee; }
+    .bubble { max-width:80%; padding:10px 12px; border-radius:12px; margin:8px 0; white-space:pre-wrap; line-height:1.4; }
+    .user { background:#111; color:#fff; margin-left:auto; }
+    .bot { background:#fff; border:1px solid #eee; }
+    .muted { color:#666; font-size:12px; margin-top:6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Lab Chat</h2>
+    <div class="card">
+      <div class="msgs" id="list"></div>
+      <div style="padding:12px;">
+        <div class="row" style="align-items:flex-end;">
+          <textarea id="ta" class="ta" rows="2" placeholder="Ask a question..."></textarea>
+          <button id="send" class="btn">Send</button>
+        </div>
+        <div class="row" style="margin-top:8px;">
+          <input id="slug" class="input" placeholder="bot slug (e.g., ials-ataa)" />
+          <button id="use" class="btn" style="background:#444;">Use bot</button>
+          <button id="reset" class="btn" style="background:#b91c1c;">Reset</button>
+        </div>
+        <div class="muted">
+          Tip: open as <code>/b/&lt;slug&gt;</code> or <code>/?bot=&lt;slug&gt;</code> to auto-select the bot.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const list = document.getElementById('list');
+    const ta = document.getElementById('ta');
+    const sendBtn = document.getElementById('send');
+    const slugInput = document.getElementById('slug');
+    const useBtn = document.getElementById('use');
+    const resetBtn = document.getElementById('reset');
+
+    function getSlugFromURL() {
+      const p = location.pathname.split('/').filter(Boolean);
+      if (p[0] === 'b' && p[1]) return p[1];
+      const u = new URL(location.href);
+      return u.searchParams.get('bot') || '';
+    }
+
+    let slug = getSlugFromURL() || localStorage.getItem('bot-slug') || '';
+    if (slug) slugInput.value = slug;
+
+    let msgs = JSON.parse(localStorage.getItem('chat:' + (slug || 'default')) || '[]');
+    if (msgs.length === 0) msgs.push({ role: 'assistant', content: 'Hi! Pick a bot slug and ask a question.' });
+    render();
+
+    function render() {
+      list.innerHTML = '';
+      msgs.forEach(m => {
+        const div = document.createElement('div');
+        div.className = 'bubble ' + (m.role === 'user' ? 'user' : 'bot');
+        div.textContent = m.content;
+        list.appendChild(div);
+      });
+      list.scrollTo({ top: list.scrollHeight });
+      localStorage.setItem('chat:' + (slug || 'default'), JSON.stringify(msgs));
+      if (slug) localStorage.setItem('bot-slug', slug);
+    }
+
+    function draftBotBubble() {
+      const div = document.createElement('div');
+      div.className = 'bubble bot';
+      div.textContent = '…';
+      list.appendChild(div);
+      list.scrollTo({ top: list.scrollHeight });
+      return div;
+    }
+
+    async function send() {
+      if (!slug) { alert('Pick a bot slug first.'); return; }
+      const text = ta.value.trim();
+      if (!text) return;
+      ta.value = '';
+      msgs.push({ role: 'user', content: text }); render();
+      sendBtn.disabled = true;
+      const draft = draftBotBubble();
+
+      try {
+        const res = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ slug, message: text }),
+        });
+        const data = await res.json();
+        const reply = data?.reply ?? '(no reply)';
+        msgs.push({ role: 'assistant', content: reply });
+        draft.remove();
+        render();
+      } catch (e) {
+        draft.textContent = 'Error: ' + (e.message || e);
+      } finally {
+        sendBtn.disabled = false;
+        ta.focus();
+      }
+    }
+
+    sendBtn.onclick = send;
+    ta.onkeydown = (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } };
+    useBtn.onclick = () => { slug = (slugInput.value || '').trim(); msgs = []; render(); };
+    resetBtn.onclick = () => { msgs = [{ role:'assistant', content:'New chat started.' }]; render(); };
+  </script>
+</body>
+</html>
+

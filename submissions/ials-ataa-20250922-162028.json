@@ -1,0 +1,93 @@
+{
+  "bot": {
+    "name": "Ataa",
+    "lab": "IALS",
+    "owner_email": "ataarin@gmail.com",
+    "description": "asdfasdf",
+    "slug": "ials-ataa",
+    "model": "qwen2.5:7b-instruct",
+    "embed_model": "nomic-embed-text",
+    "temperature": 0.2,
+    "top_p": 0.95
+  },
+  "pairs": [
+    {
+      "q": "What do you do?",
+      "a": "We provide AI demos and lab tools that answer common questions about our services, policies, and research support."
+    },
+    {
+      "q": "What model do you use?",
+      "a": "Locally hosted Qwen 3 (Mini 0.6B or Tiny 1.8B) via Ollama, with thinking disabled."
+    },
+    {
+      "q": "Do you store my messages?",
+      "a": "For the demo, we do not store chat content server-side. Logs may record aggregate counts and errors only."
+    },
+    {
+      "q": "How accurate are the answers?",
+      "a": "The bot only replies using the provided FAQ content. If it is unsure, it will respond with 'I don't know.'"
+    },
+    {
+      "q": "Can I ask questions not in the FAQ?",
+      "a": "Yes, but if there is no matching FAQ item, the bot will answer 'I don't know.'"
+    },
+    {
+      "q": "How do you find answers?",
+      "a": "We embed each question and use cosine similarity to retrieve the most relevant Q-A pairs."
+    },
+    {
+      "q": "Which embedding model do you use?",
+      "a": "We use 'nomic-embed-text' from Ollama to create question vectors."
+    },
+    {
+      "q": "Can I update the FAQ?",
+      "a": "Yes. Edit qa.json and rebuild the index to update the demo."
+    },
+    {
+      "q": "How do I rebuild the index?",
+      "a": "Run build_index.py to regenerate vecs.npy from qa.json."
+    },
+    {
+      "q": "What happens if the index is missing?",
+      "a": "The demo will run, but it will answer 'I don't know' for all questions until the index is built."
+    },
+    {
+      "q": "Do you support citations?",
+      "a": "Not in this demo. The bot answers only with short text from the FAQ."
+    },
+    {
+      "q": "Can I change the model?",
+      "a": "Yes. Set the MODEL environment variable or edit backend.py to select a different Ollama model."
+    },
+    {
+      "q": "Does the bot use tools or browsing?",
+      "a": "No. It only uses local embeddings and the FAQ content."
+    },
+    {
+      "q": "Can I self-host this?",
+      "a": "Yes. You need Python 3.10+, FastAPI, Uvicorn, NumPy, and a local Ollama daemon."
+    },
+    {
+      "q": "How do I run the server?",
+      "a": "Start Ollama, then run 'python backend.py'. The API will be at /chat and /health."
+    },
+    {
+      "q": "What is the maximum context size?",
+      "a": "Small. We keep prompts tiny and answers short for speed and stability on small models."
+    },
+    {
+      "q": "Will the bot hallucinate?",
+      "a": "It is instructed to reply only from the FAQ. When unsure, it says 'I don't know.'"
+    },
+    {
+      "q": "Can I get a copy of the code?",
+      "a": "Yes. This demo includes build_index.py, backend.py, qa.json, and vecs.npy after indexing."
+    },
+    {
+      "q": "Who do I contact for support?",
+      "a": "Email support@yourlab.example or use the Contact section on our website."
+    }
+  ],
+  "created_at": "2025-09-22T16:20:27.027Z",
+  "version": "2025-09-16"
+}
